@@ -1,0 +1,19 @@
+{
+    "name": "GameFramework.Common",
+    "rootNamespace": "",
+    "references": [
+        "NovaEngine.Library",
+        "NovaEngine.Kernel",
+        "NovaEngine.Basic",
+        "NovaEngine.Import"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
