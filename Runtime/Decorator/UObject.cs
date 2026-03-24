@@ -24,9 +24,9 @@
 namespace GameFramework
 {
     /// <summary>
-    /// 业务层二次封装的场景对象类
+    /// 业务层二次封装的原生对象类<br/>
     /// </summary>
-    public abstract class GScene : GameEngine.CScene
+    public abstract class UObject : GameEngine.CObject
     {
         // protected override void OnInitialize() { }
 

@@ -21,43 +21,33 @@
 /// THE SOFTWARE.
 /// -------------------------------------------------------------------------------
 
-using System;
-
 namespace GameFramework
 {
     /// <summary>
-    /// 视图窗口恢复通知声明属性类型定义
+    /// 业务层二次封装的视图对象类
     /// </summary>
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class GViewResumeAttribute : GameEngine.CViewNoticeCallAttribute
+    public abstract class UView : GameEngine.CView
     {
-        public GViewResumeAttribute() : base(GameEngine.ViewNoticeType.Resume) { }
-    }
+        // protected override void OnInitialize() { }
 
-    /// <summary>
-    /// 视图窗口暂停通知声明属性类型定义
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class GViewPauseAttribute : GameEngine.CViewNoticeCallAttribute
-    {
-        public GViewPauseAttribute() : base(GameEngine.ViewNoticeType.Pause) { }
-    }
+        // protected override void OnStartup() { }
 
-    /// <summary>
-    /// 视图窗口置顶通知声明属性类型定义
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class GViewRevealAttribute : GameEngine.CViewNoticeCallAttribute
-    {
-        public GViewRevealAttribute() : base(GameEngine.ViewNoticeType.Reveal) { }
-    }
+        // protected override void OnAwake() { }
 
-    /// <summary>
-    /// 视图窗口遮挡通知声明属性类型定义
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class GViewCoverAttribute : GameEngine.CViewNoticeCallAttribute
-    {
-        public GViewCoverAttribute() : base(GameEngine.ViewNoticeType.Cover) { }
+        // protected override void OnStart() { }
+
+        // protected override void OnDestroy() { }
+
+        // protected override void OnShutdown() { }
+
+        // protected override void OnCleanup() { }
+
+        // protected override void OnExecute() { }
+
+        // protected override void OnLateExecute() { }
+
+        // protected override void OnUpdate() { }
+
+        // protected override void OnLateUpdate() { }
     }
 }
