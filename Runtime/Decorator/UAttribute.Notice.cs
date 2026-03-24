@@ -21,35 +21,43 @@
 /// THE SOFTWARE.
 /// -------------------------------------------------------------------------------
 
+using System;
+
 namespace GameFramework
 {
     /// <summary>
-    /// 业务层二次封装的原生对象类<br/>
-    /// 需要注意的是，在FairyGUI库中，也有一个同名的<see cref="FairyGUI.GObject"/><br/>
-    /// 所以在引用的时候，需要注意使用的命名空间
+    /// 视图窗口恢复通知声明属性类型定义
     /// </summary>
-    public abstract class GObject : GameEngine.CObject
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public class UViewResumeAttribute : GameEngine.CViewNoticeCallAttribute
     {
-        // protected override void OnInitialize() { }
+        public UViewResumeAttribute() : base(GameEngine.ViewNoticeType.Resume) { }
+    }
 
-        // protected override void OnStartup() { }
+    /// <summary>
+    /// 视图窗口暂停通知声明属性类型定义
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public class UViewPauseAttribute : GameEngine.CViewNoticeCallAttribute
+    {
+        public UViewPauseAttribute() : base(GameEngine.ViewNoticeType.Pause) { }
+    }
 
-        // protected override void OnAwake() { }
+    /// <summary>
+    /// 视图窗口置顶通知声明属性类型定义
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public class UViewRevealAttribute : GameEngine.CViewNoticeCallAttribute
+    {
+        public UViewRevealAttribute() : base(GameEngine.ViewNoticeType.Reveal) { }
+    }
 
-        // protected override void OnStart() { }
-
-        // protected override void OnDestroy() { }
-
-        // protected override void OnShutdown() { }
-
-        // protected override void OnCleanup() { }
-
-        // protected override void OnExecute() { }
-
-        // protected override void OnLateExecute() { }
-
-        // protected override void OnUpdate() { }
-
-        // protected override void OnLateUpdate() { }
+    /// <summary>
+    /// 视图窗口遮挡通知声明属性类型定义
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public class UViewCoverAttribute : GameEngine.CViewNoticeCallAttribute
+    {
+        public UViewCoverAttribute() : base(GameEngine.ViewNoticeType.Cover) { }
     }
 }

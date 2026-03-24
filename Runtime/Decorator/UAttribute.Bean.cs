@@ -29,75 +29,75 @@ namespace GameFramework
     /// 对象实现类声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GObjectClassAttribute : GameEngine.CObjectClassAttribute
+    public class UObjectClassAttribute : GameEngine.CObjectClassAttribute
     {
-        public GObjectClassAttribute() : base() { }
+        public UObjectClassAttribute() : base() { }
 
-        public GObjectClassAttribute(string viewName) : base(viewName) { }
+        public UObjectClassAttribute(string viewName) : base(viewName) { }
 
-        public GObjectClassAttribute(int priority) : base(priority) { }
+        public UObjectClassAttribute(int priority) : base(priority) { }
 
-        public GObjectClassAttribute(string viewName, int priority) : base(viewName, priority) { }
+        public UObjectClassAttribute(string viewName, int priority) : base(viewName, priority) { }
     }
 
     /// <summary>
     /// 场景实现类声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GSceneClassAttribute : GameEngine.CSceneClassAttribute
+    public class USceneClassAttribute : GameEngine.CSceneClassAttribute
     {
-        public GSceneClassAttribute() : base() { }
+        public USceneClassAttribute() : base() { }
 
-        public GSceneClassAttribute(string viewName) : base(viewName) { }
+        public USceneClassAttribute(string viewName) : base(viewName) { }
 
-        public GSceneClassAttribute(int priority) : base(priority) { }
+        public USceneClassAttribute(int priority) : base(priority) { }
 
-        public GSceneClassAttribute(string viewName, int priority) : base(viewName, priority) { }
+        public USceneClassAttribute(string viewName, int priority) : base(viewName, priority) { }
     }
 
     /// <summary>
     /// 角色实现类声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GActorClassAttribute : GameEngine.CActorClassAttribute
+    public class UActorClassAttribute : GameEngine.CActorClassAttribute
     {
-        public GActorClassAttribute() : base() { }
+        public UActorClassAttribute() : base() { }
 
-        public GActorClassAttribute(string viewName) : base(viewName) { }
+        public UActorClassAttribute(string viewName) : base(viewName) { }
 
-        public GActorClassAttribute(int priority) : base(priority) { }
+        public UActorClassAttribute(int priority) : base(priority) { }
 
-        public GActorClassAttribute(string viewName, int priority) : base(viewName, priority) { }
+        public UActorClassAttribute(string viewName, int priority) : base(viewName, priority) { }
     }
 
     /// <summary>
     /// 视图实现类声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GViewClassAttribute : GameEngine.CViewClassAttribute
+    public class UViewClassAttribute : GameEngine.CViewClassAttribute
     {
-        public GViewClassAttribute() : base() { }
+        public UViewClassAttribute() : base() { }
 
-        public GViewClassAttribute(string viewName) : base(viewName) { }
+        public UViewClassAttribute(string viewName) : base(viewName) { }
 
-        public GViewClassAttribute(int priority) : base(priority) { }
+        public UViewClassAttribute(int priority) : base(priority) { }
 
-        public GViewClassAttribute(string viewName, int priority) : base(viewName, priority) { }
+        public UViewClassAttribute(string viewName, int priority) : base(viewName, priority) { }
     }
 
     /// <summary>
     /// 组件实现类声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GComponentClassAttribute : GameEngine.CComponentClassAttribute
+    public class UComponentClassAttribute : GameEngine.CComponentClassAttribute
     {
-        public GComponentClassAttribute() : base() { }
+        public UComponentClassAttribute() : base() { }
 
-        public GComponentClassAttribute(string viewName) : base(viewName) { }
+        public UComponentClassAttribute(string viewName) : base(viewName) { }
 
-        public GComponentClassAttribute(int priority) : base(priority) { }
+        public UComponentClassAttribute(int priority) : base(priority) { }
 
-        public GComponentClassAttribute(string viewName, int priority) : base(viewName, priority) { }
+        public UComponentClassAttribute(string viewName, int priority) : base(viewName, priority) { }
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -106,21 +106,21 @@ namespace GameFramework
     /// 视图分组策略声明属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class GViewGroupAttribute : GameEngine.CViewGroupAttribute
+    public class UViewGroupAttribute : GameEngine.CViewGroupAttribute
     {
-        public GViewGroupAttribute(string groupName) : base(groupName) { }
+        public UViewGroupAttribute(string groupName) : base(groupName) { }
     }
 
     /// <summary>
     /// 实体自动挂载的目标组件的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
-    public class GComponentAutomaticActivationOfEntityAttribute : GameEngine.CComponentAutomaticActivationOfEntityAttribute
+    public class UComponentAutomaticActivationOfEntityAttribute : GameEngine.CComponentAutomaticActivationOfEntityAttribute
     {
-        public GComponentAutomaticActivationOfEntityAttribute(Type referenceType) : base(referenceType) { }
+        public UComponentAutomaticActivationOfEntityAttribute(Type referenceType) : base(referenceType) { }
 
-        public GComponentAutomaticActivationOfEntityAttribute(Type referenceType, int priority) : base(referenceType, priority) { }
+        public UComponentAutomaticActivationOfEntityAttribute(Type referenceType, int priority) : base(referenceType, priority) { }
 
-        public GComponentAutomaticActivationOfEntityAttribute(Type referenceType, int priority, GameEngine.AspectBehaviourType activationBehaviourType) : base(referenceType, priority, activationBehaviourType) { }
+        public UComponentAutomaticActivationOfEntityAttribute(Type referenceType, int priority, GameEngine.AspectBehaviourType activationBehaviourType) : base(referenceType, priority, activationBehaviourType) { }
     }
 }
